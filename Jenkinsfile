@@ -9,8 +9,6 @@ pipeline {
 
     stage('Hello Again') {
       steps {
-        echo "Hello from Organization - all environment variable are:"
-        sh 'printenv'
         echo "The build Id was: ${BUILD_ID}"
       }
     }
