@@ -1,12 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout') {
-      steps {
-        checkout scm
-      }
-    }
-    
+  //   stage('Checkout') {
+  //     steps {
+  //       checkout scm
+  //     }
+  //   }
     stage('Hello') {
       steps {
         echo "Hello from Organization Jenkinsfile - I am from ${env.BRANCH_NAME}"
